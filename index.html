@@ -1,93 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Hotel Quinta Parroquia">
-    <meta name="keywords" content="Kafic">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Quinta Parroquia Hotel</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Hotel Quinta Parroquia">
+  <meta name="keywords" content="Kafic">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="booking.js" charset="utf-8"></script>
+
+  <title>Quinta Parroquia Hotel</title>
 </head>
+
 <body>
   <header>
-        <nav id="navbar">
-        <div class="container">
-                <h1 class="logo"><a href="index.html">Hotel Quinta Parroquia</a></h1>
-                <ul>
-                    <li><a class="current" href="index.html">Inicio</a></li>
-                    <li><a href="#home-info">Sobre el Hotel</a></li>
-                    <li><a href="contact.html">Reserva con nosotros</a></li>
-                </ul>
-              </div>
-            </nav>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">Hotel Quinta Parroquia</a></h1>
+        <ul>
+          <li><a class="current" href="index.html">Inicio</a></li>
+          <li><a href="#home-info">Sobre el Hotel</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#exampleModal">Reserva con nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
 
-         <div id="showcase">
-           <div class="container">
-               <div class="showcase-content">
-                   <h1><span class="text"><font color=#ee8926>Disfrute su estancia</font></span></h1>
-                   <p class="lead"><b>Somos un hotel ubicado en el corazón de Morelos, donde el clima y paisaje lo convierten en el lugar ideal de descanso.</b></p>
-                   <a class="btn" href="about.html">Realiza tu reservación</a>
-               </div>
-           </div>
-         </div>
-    </header>
-    <section id="home-info" class="bg-dark">
-        <div class="info-img"></div>
-        <div class="info-content">
-          <h2><span class="text-primary"><font color=#ffffff>Sobre el Hotel</font></span></h2>
-          <p>
-            El hotel se localiza a menos de 20 km de la capital de Morelos.
-            La calidez de nuestro servicio lo harán sentir como en casa.
-            Podrá disfrutar de amaneceres y atardeceres en el marco perfecto para dejarse consentir por la naturaleza.
-            Contamos con 12 habitaciones, alberca, estacionamiento, área de eventos y conferencias, terraza, además de todas las comodidades que puede disfrutar en una estancia en pareja, con amigos o en familia.
-          </p>
-          <a href="https://goo.gl/maps/nuXZxc32asp4mQKEA"  target="_blank" class="btn btn-light">Ver ubicación en Maps</a>
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1><span class="text">
+              <font color=#ee8926>Disfrute su estancia</font>
+            </span></h1>
+          <p class="lead"><b>Somos un hotel ubicado en el corazón de Morelos, donde el clima y paisaje lo convierten en el lugar ideal de descanso.</b></p>
+          <a class="btn" href="#" data-toggle="modal" data-target="#exampleModal">Realiza tu reservación</a>
         </div>
-      </section>
-       <section id="features">
-           <div class="box bg-light">
-            <i class="fas fa-map-marked-alt fa-3x"></i>
-               <h3>Nuestra ubicación</h3>
-               <p>Nos encontramos en: Calle Argentina No. 18 colonia centro, 62790 Xochitepec, Morelos, Mexico</p>
-               <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.333526757662!2d-99.23244958579181!3d18.78328396599057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd832499c70d3%3A0xfff5680392eeb05e!2sHotel%20Quinta%20Parroquia!5e0!3m2!1ses!2smx!4v1599789024185!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
-           </div>
-           <div class="box bg-danger" style="color: #ffffff">
-            <i class="fas fa-bed fa-3x"></i>
-            <h3>Nuestras habitaciones</h3>
-            <p>Todas nuestras habitaciones cuentan con SmartTv, aire acondicionado, wifi, baño propio, toallas, ropa de cama extra, etc. </p>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="habitacion2.jpg" class="d-block w-100" alt="habitacion2.jpg">
+      </div>
+    </div>
+  </header>
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2><span class="text-primary">
+          <font color=#ffffff>Sobre el Hotel</font>
+        </span></h2>
+      <p>
+        El hotel se localiza a menos de 20 km de la capital de Morelos.
+        La calidez de nuestro servicio lo harán sentir como en casa.
+        Podrá disfrutar de amaneceres y atardeceres en el marco perfecto para dejarse consentir por la naturaleza.
+        Contamos con 12 habitaciones, alberca, estacionamiento, área de eventos y conferencias, terraza, además de todas las comodidades que puede disfrutar en una estancia en pareja, con amigos o en familia.
+      </p>
+      <a href="https://goo.gl/maps/nuXZxc32asp4mQKEA" target="_blank" class="btn btn-light">Ver ubicación en Maps</a>
+    </div>
+  </section>
+  <section id="features">
+    <div class="box bg-light">
+      <i class="fas fa-map-marked-alt fa-3x"></i>
+      <h3>Nuestra ubicación</h3>
+      <p>Nos encontramos en: Calle Argentina No. 18 colonia centro, 62790 Xochitepec, Morelos, Mexico</p>
+      <p><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.333526757662!2d-99.23244958579181!3d18.78328396599057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd832499c70d3%3A0xfff5680392eeb05e!2sHotel%20Quinta%20Parroquia!5e0!3m2!1ses!2smx!4v1599789024185!5m2!1ses!2smx"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+    </div>
+    <div class="box bg-danger" style="color: #ffffff">
+      <i class="fas fa-bed fa-3x"></i>
+      <h3>Nuestras habitaciones</h3>
+      <p>Todas nuestras habitaciones cuentan con SmartTv, aire acondicionado, wifi, baño propio, toallas, ropa de cama extra, etc. </p>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="habitacion2.jpg" class="d-block w-100" alt="habitacion2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="habitacion3.jpg" class="d-block w-100" alt="habitacion3.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="habitacion4.jpg" class="d-block w-100" alt="habitacion4.jpg">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reservación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+          <!-- CONTENEDOR PARA INPUTS -->
+          <div class="container my-5">
+
+            <!-- INPUTS COPIADOS Y PEGADOS DE BOOTSTRAP: https://getbootstrap.com/docs/4.5/components/input-group/#basic-example -->
+            <!-- RECORDAR PONER ID A TODOS LOS ELEMNTOS QUE QUERAMOS USAR DESDE EL JS -->
+
+            <!-- INPUT NOMBRE -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Nombre Completo</span>
               </div>
-              <div class="carousel-item">
-                <img src="habitacion3.jpg" class="d-block w-100" alt="habitacion3.jpg">
+              <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Nombre" id="nombre">
+            </div>
+
+            <!-- INPUT Correo -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Correo electrónico</span>
               </div>
-              <div class="carousel-item">
-                <img src="habitacion4.jpg" class="d-block w-100" alt="habitacion4.jpg">
+              <input type="text" class="form-control" placeholder="ejemplo@mail.com" aria-label="correo" id="correo">
+            </div>
+
+            <!-- INPUT NUMERO DE ADULTOS -->
+            <div class="form-row align-items-left">
+              <div class="col-auto my-1 w-100">
+                <span class="input-group-text">Número de adultos</span>
+                <select class="custom-select mr-sm-2" id="adultos">
+                  <option selected disabled value="">Número de adultos</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Siguiente</span>
-            </a>
-          </div>
-          </div>
-       </section>
-       <footer id="main-footer">
-       </footer>
+            <p></p>
 
-       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            <!-- INPUT NUMERO DE NIÑOS -->
+            <div class="form-row align-items-left">
+              <div class="col-auto my-1 w-100">
+                <span class="input-group-text">Numero de niños</span>
+                <select class="custom-select mr-sm-2" id="kids">
+                  <option selected disabled value="">Número de niños (+14 años)</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+            </div>
+            <p></p>
+            <!-- INPUT TELÉFONO -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Teléfono</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono" id="telefono">
+            </div>
+
+            <!-- INPUT Mascotas -->
+            <div class="custom-control custom-checkbox my-1">
+              <input type="checkbox" class="custom-control-input" id="mascotas">
+              <label class="custom-control-label" for="mascotas">Mascotas</label>
+            </div>
+
+            <!-- INPUT Cuidados -->
+            <div class="custom-control custom-checkbox my-1">
+              <input type="checkbox" class="custom-control-input" id="cuidados">
+              <label class="custom-control-label" for="cuidados">Cuidados Especiales</label>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelar">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="reservar" href="confirmacion.html">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
